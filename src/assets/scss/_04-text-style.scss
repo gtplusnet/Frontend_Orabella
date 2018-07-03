@@ -1,0 +1,27 @@
+@import "01-variables";
+@import "02-mixins";
+
+h2
+{
+	@include text-style($montserrat, $reg, 1.875rem);
+}
+
+h3
+{
+	@include text-style($montserrat, $reg, 1.625rem);
+}
+
+p 
+{
+	@include text-style($montserrat, $reg, 	0.9375rem);
+}
+
+.text-dark
+{
+	color: $dark !important;
+}
+
+.text-light
+{
+	color: $light !important;
+}
