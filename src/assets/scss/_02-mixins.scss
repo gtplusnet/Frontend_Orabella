@@ -1,8 +1,9 @@
-@mixin text-style($ff, $fw, $fz)
+@mixin text-style($ff, $fw, $fz, $ls)
 {
 	font-family: $ff;
 	font-weight: $fw;
 	font-size: $fz;
+	letter-spacing: $ls;
 }
 
 @mixin transition($transition) 

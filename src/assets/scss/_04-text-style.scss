@@ -3,17 +3,17 @@
 
 h2
 {
-	@include text-style($heading-text, $reg, 1.875rem);
+	@include text-style($heading-text, $reg, 1.875rem, 0.01rem);
 }
 
 h3
 {
-	@include text-style($heading-text, $reg, 1.625rem);
+	@include text-style($heading-text, $reg, 1.625rem, 0.01rem);
 }
 
 p 
 {
-	@include text-style($heading-text, $reg, 	0.9375rem);
+	@include text-style($body-text, $reg, 1.125rem, 0.01rem);
 }
 
 .text-dark
@@ -24,4 +24,9 @@ p
 .text-light
 {
 	color: $light !important;
+}
+
+.t-center 
+{
+	text-align: center;
 }

@@ -2,12 +2,74 @@
 
 @media screen and (max-width: $tablet)
 {
-
+	
 }
 
 @media screen and (max-width: $mobile-l)
 {
+	.carousel-control
+	{
+		padding: 5px;
+		background-color: #752c88;
 
+		span 
+		{
+			vertical-align: middle;
+			margin-top: -2px;
+		}
+
+		.carousel-control-next-icon, .carousel-control-prev-icon
+		{
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	.s1 
+	{
+		.image-title 
+		{
+			max-width: 250px;
+		}
+		.image-content 
+		{
+			max-width: 300px;
+		}
+		h2 
+		{
+			font-size: 1.375rem !important;
+		}
+	}
+
+	.s2 
+	{
+		h2 
+		{
+			font-size: 1.125rem !important;
+		}
+		h3 
+		{
+			font-size: 1.375rem !important;
+		}
+		.col-container 
+		{
+			flex-wrap: wrap;
+		}
+	}
+
+	.s3 
+	{
+		.col-container 
+		{
+			flex-wrap: wrap;
+			text-align: center;
+
+			.img-title 
+			{
+				padding-bottom: 20px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: $mobile-m)
