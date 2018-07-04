@@ -64,9 +64,22 @@
 			flex-wrap: wrap;
 			text-align: center;
 
+			h3 
+			{
+				font-size: 1.125rem !important
+			}
+
 			.img-title 
 			{
 				padding-bottom: 20px;
+			}
+
+			.col-content 
+			{
+				button 
+				{
+					width: 100%;
+				}
 			}
 		}
 	}

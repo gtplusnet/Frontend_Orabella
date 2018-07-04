@@ -16,9 +16,43 @@
 		}
 	}
 
-	.top-inner 
+	footer 
 	{
-		flex-wrap: wrap;
+		.top-inner 
+		{
+			.top-inner-c
+			{
+				flex-wrap: wrap;
+				text-align: center;
+				padding: 20px 0;
+
+				div 
+				{
+					margin: auto !important;
+					padding: 10px 0;
+				}
+			}
+		}
+
+		.bottom-inner 
+		{
+			.bottom-inner-c 
+			{
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+
+				grid-template-areas:
+				"logo logo logo logo"
+				"col2 col2 col3 col3"
+				"col4 col4 col5 col5";
+			}
+
+			.g-item1
+			{
+				justify-self: center;
+				padding-bottom: 40px;
+			}
+		}
+		
 	}
 }
 

@@ -72,13 +72,26 @@ footer
 	}
 	.bottom-inner 
 	{
-		padding: 20px 0;
+		padding: 40px 0;
 		background-color: #571c68;
 
 		.bottom-inner-c
 		{
 			display: grid;
 			grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+			grid-gap: 10px;
+			grid-template-areas:
+			"logo col2 col3 col4 col5";
+
+			// @media screen and (max-width: $mobile-l)
+			// {
+			// 	grid-template-areas:
+			// 	"logo logo logo logo logo"
+			// 	"col1 col1 col1 col1 col1"
+			// 	"col2 col2 col2 col2 col2"
+			// 	"col3 col3 col3 col3 col3"
+			// 	"col4 col4 col4 col4 col4";
+			// }
 
 			.bottom-inner-col
 			{
@@ -121,6 +134,26 @@ footer
 						}
 					}
 				}
+			}
+			.g-item1
+			{
+				grid-area: logo;
+			}
+			.g-item2
+			{
+				grid-area: col2;
+			}
+			.g-item3
+			{
+				grid-area: col3;	
+			}
+			.g-item4
+			{
+				grid-area: col4;
+			}
+			.g-item5
+			{
+				grid-area: col5;
 			}
 		}
 		.bottom-lower 
