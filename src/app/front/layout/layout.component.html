@@ -1,6 +1,6 @@
 <header>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Navbar</a>
+		<a class="navbar-brand" [routerLink]="['']"><img src="../../../assets/img/logo.png" alt=""></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -8,34 +8,153 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" [routerLink]="['']">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
+					<a class="nav-link" [routerLink]="['']">HOME<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  Dropdown
+					  WHO WE ARE
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
+						<a class="dropdown-item" [routerLink]="['']">The Company</a>
+						<a class="dropdown-item" [routerLink]="['']">Vision & Mission</a>
+						<a class="dropdown-item" [routerLink]="['']">Contact Us</a>
 					</div>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Disabled</a>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  PREMIUM COLLECTIONS
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" [routerLink]="['']">Whitening System</a>
+						<a class="dropdown-item" [routerLink]="['']">Mineral Mask</a>
+						<a class="dropdown-item" [routerLink]="['']">Color Stick System</a>
+						<a class="dropdown-item" [routerLink]="['']">Tutorials</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  PARTNER WITH US
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" [routerLink]="['']">Start the Business</a>
+						<a class="dropdown-item" [routerLink]="['']">Earning Opportunities</a>
+						<a class="dropdown-item" [routerLink]="['']">Bella's Corner</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  CELEBRATIONS
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" [routerLink]="['']">Events</a>
+						<a class="dropdown-item" [routerLink]="['']">Beauty Caravans</a>
+						<a class="dropdown-item" [routerLink]="['']">Incentives</a>
+						<a class="dropdown-item" [routerLink]="['']">Promotions</a>
+						<a class="dropdown-item" [routerLink]="['']">CSR Activities</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  MY ACCOUNT
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" [routerLink]="['']">Login</a>
+						<a class="dropdown-item" [routerLink]="['']">Join Us Today</a>
+						<a class="dropdown-item" [routerLink]="['']">Forgot Password</a>
+					</div>
+					<!-- If account is logged in -->
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" [routerLink]="['']">My Dashboard</a>
+						<a class="dropdown-item" [routerLink]="['']">Profile Settings</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" [routerLink]="['']">Logout</a>
+					</div>
 				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form>
+			<div class="cart-container ml-auto">
+				<a [routerLink]="['']">
+					<img class="cart-bag" src="../../../assets/img/shop-bag.svg" alt="">
+					<span>&nbsp;MY SHOPPING BAG (0)</span>
+				</a>
+			</div>
 		</div>
 	</nav>
 </header>
 
 <router-outlet></router-outlet>
 
-<footer></footer>
+<footer>
+	<div class="top-inner">
+		<div class="container">
+			<div class="top-inner-c d-flex align-items-center flex-wrap">
+				<div class="mr-auto">
+					<span>FOLLOW US ON:&nbsp;&nbsp;</span>
+					<span><a [routerLink]="['']"><img src="../../../assets/img/fb.svg" alt=""></a></span>
+					<span><a [routerLink]="['']"><img src="../../../assets/img/tw.svg" alt=""></a></span>
+					<span><a [routerLink]="['']"><img src="../../../assets/img/in.svg" alt=""></a></span>
+					<span><a [routerLink]="['']"><img src="../../../assets/img/yt.svg" alt=""></a></span>
+				</div>
+				<div class="ml-auto">
+					<a [routerLink]="['']">
+						<button class="btn-primary btn-md btn-or">
+							Get Intouch With Us
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-inner">
+		<div class="container">
+			<div class="bottom-inner-c">
+				<div class="bottom-inner-col">
+					<div class="logo-f">
+						<img src="../../../assets/img/f-logo.png" alt="">
+					</div>
+					<div class="logo-f2">
+						<img src="../../../assets/img/f-logo2.png" alt="">
+					</div>
+				</div>
+				<div class="bottom-inner-col">
+					<div class="col-title">WHO WE ARE</div>
+					<div class="col-links">
+						<div><a [routerLink]="['']">The Company</a></div>
+						<div><a [routerLink]="['']">Mission & Vision</a></div>
+						<div><a [routerLink]="['']">Contact Us</a></div>					
+					</div>
+				</div>
+				<div class="bottom-inner-col">
+					<div class="col-title">PREMIUM COLLECTIONS</div>
+					<div class="col-links">
+						<div><a [routerLink]="['']">Whitening System</a></div>
+						<div><a [routerLink]="['']">Mineral Mask</a></div>
+						<div><a [routerLink]="['']">Color Stick System</a></div>
+						<div><a [routerLink]="['']">Tutorials</a></div>					
+					</div>
+				</div>
+				<div class="bottom-inner-col">
+					<div class="col-title">PARTNER WITH US</div>
+					<div class="col-links">
+						<div><a [routerLink]="['']">Start the Business</a></div>
+						<div><a [routerLink]="['']">Earning Opportunities</a></div>
+						<div><a [routerLink]="['']">Bella's Corner</a></div>					
+					</div>
+				</div>
+				<div class="bottom-inner-col">
+					<div class="col-title">CELEBRATIONS</div>
+					<div class="col-links">
+						<div><a [routerLink]="['']">Events</a></div>
+						<div><a [routerLink]="['']">Beauty Caravans</a></div>
+						<div><a [routerLink]="['']">Incentives</a></div>
+						<div><a [routerLink]="['']">Promotions</a></div>
+						<div><a [routerLink]="['']">CSR Activities</a></div>					
+					</div>
+				</div>
+			</div>
+			<div class="bottom-lower d-flex align-items-center">
+				<div class="lower-l">© 2018 ORABELLA. All Rights Reserved.</div>
+				<div class="lower-r ml-auto"><a>Terms and Conditions</a> | <a>Legalities</a></div>
+			</div>
+		</div>
+	</div>
+</footer>

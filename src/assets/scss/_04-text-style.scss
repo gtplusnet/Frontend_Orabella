@@ -3,17 +3,17 @@
 
 h2
 {
-	@include text-style($montserrat, $reg, 1.875rem);
+	@include text-style($heading-text, $reg, 1.875rem);
 }
 
 h3
 {
-	@include text-style($montserrat, $reg, 1.625rem);
+	@include text-style($heading-text, $reg, 1.625rem);
 }
 
 p 
 {
-	@include text-style($montserrat, $reg, 	0.9375rem);
+	@include text-style($heading-text, $reg, 	0.9375rem);
 }
 
 .text-dark
