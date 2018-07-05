@@ -2,7 +2,10 @@
 
 @media screen and (max-width: $tablet)
 {
-	
+	.carousel-inner 
+	{
+		height: auto;
+	}
 }
 
 @media screen and (max-width: $mobile-l)

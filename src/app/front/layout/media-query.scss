@@ -2,7 +2,10 @@
 
 @media screen and (max-width: $tablet)
 {
-	
+	.cart-container 
+	{
+		padding: 20px 0;
+	}
 }
 
 @media screen and (max-width: $mobile-l)
