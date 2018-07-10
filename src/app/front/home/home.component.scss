@@ -1,5 +1,10 @@
 @import "../../../styles";
 
+body 
+{
+	font-size: $bfs;
+}
+
 .carousel-inner 
 {
 	height: 89vh;
@@ -40,6 +45,22 @@
 		span 
 		{
 			font-weight: $bold;
+		}
+	}
+	.g-carousel-container
+	{
+		padding-top: 60px;
+		overflow: hidden;
+
+		.swiper-wrapper
+		{
+			.swiper-slide
+			{
+				img 
+				{
+					width: 100%;
+				}
+			}
 		}
 	}
 }
