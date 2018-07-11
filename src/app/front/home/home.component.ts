@@ -62,7 +62,6 @@ export class HomeComponent implements OnInit {
       var swiper = new Swiper('.product-container', 
       {
           slidesPerView: 4,
-          loop: true,
           autoplay:
           {
               delay: 2500,
@@ -97,5 +96,4 @@ export class HomeComponent implements OnInit {
 
      });
   }
-
 }
