@@ -1,0 +1,62 @@
+@import "../../../styles";
+
+body 
+{
+	font-size: $bfs;
+}
+
+.s1 
+{
+	min-height: 65vh;
+	background-color: $bg-gray;
+	background-image: url('../../../assets/img/about-bg.png');
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	h1 
+	{
+		font-weight: $semi;
+		color: $violet;
+	}
+
+	.row-container	 
+	{
+		padding-bottom: 60px;
+
+		.image-title 
+		{
+			max-width: 235px;
+
+			img 
+			{
+				width: 100%;
+			}
+		}
+		.context 
+		{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			height: 100%;
+			padding-bottom: 20px;
+
+			p 
+			{
+				color: $violet;
+				padding-left: 20px;
+				border-left: 2px solid $violet;
+				font-size: 1.5rem;
+			}
+		}
+		h2 
+		{
+			font-weight: $bold;
+			color: $violet;
+		}
+	}
+}
+
+
+@import "media-query";

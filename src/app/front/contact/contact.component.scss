@@ -1,0 +1,88 @@
+@import "../../../styles";
+
+body 
+{
+	font-size: $bfs;
+}
+
+.s1 
+{
+	min-height: 65vh;
+	background-color: $bg-gray;
+	background-image: url('../../../assets/img/about-bg.png');
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	.grid-container	 
+	{
+		display: grid;
+		grid-template-columns: 2fr 4fr 3fr;
+		grid-gap: 20px;
+
+		.g-item1, .g-item3
+		{
+			img 
+			{
+				width: 100%;
+			}
+		}
+
+		.g-item2 
+		{
+			h1 
+			{
+				color: $pink;
+				font-weight: $semi;
+				margin-bottom: 0;
+			}
+			h3 
+			{
+				color: $pink;
+				font-weight: $semi;
+			}
+
+			.content-table 
+			{
+				padding-top: 1.25rem;
+
+				.d-flex 
+				{
+					span 
+					{
+						font-family: $body-text;
+						color: $pink;
+						letter-spacing: 0.01rem;
+						font-size: 1.25rem;
+						font-weight: $semi;
+
+						&:nth-child(1)
+						{
+							white-space: nowrap;
+						}
+						&:nth-child(2)
+						{
+							width: 100%;
+							border-bottom: 1px solid $pink;
+						}
+					}
+				}
+			}
+
+			.bottom-details
+			{
+				padding-top: 2.5rem;
+				div 
+				{
+					color: $pink;
+					font-size: 1.25rem;
+					font-weight: $semi;
+				}
+			}
+		}
+	}
+}
+
+
+@import "media-query";

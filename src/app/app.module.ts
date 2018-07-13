@@ -5,12 +5,18 @@ import { FrontRoutesModule } from './front/front-routes/front-routes.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './front/layout/layout.component';
 import { HomeComponent } from './front/home/home.component';
+import { AboutComponent } from './front/about/about.component';
+import { ObjectiveComponent } from './front/objective/objective.component';
+import { ContactComponent } from './front/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    ObjectiveComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
