@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from "jquery";
-import Swiper from "swiper";
+import * as $ from 'jquery';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-home',
@@ -11,15 +11,13 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() 
-  {
-  	this.gallery_swiper();
-  	this.product_swiper();
+  ngOnInit() {
+      this.gallery_swiper();
+      this.product_swiper();
   }
   // Gallery Carousel
-  gallery_swiper() : void
-  {
-      var swiper = new Swiper('.g-carousel-container', 
+  gallery_swiper(): void {
+      const swiper = new Swiper('.g-carousel-container',
       {
           slidesPerView: 4,
           autoplay:
@@ -57,9 +55,8 @@ export class HomeComponent implements OnInit {
      });
   }
   // Product Listing Carousel
-  product_swiper() : void
-  {
-      var swiper = new Swiper('.product-container', 
+  product_swiper(): void {
+      const swiper = new Swiper('.product-container',
       {
           slidesPerView: 4,
           autoplay:

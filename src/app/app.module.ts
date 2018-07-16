@@ -8,6 +8,7 @@ import { HomeComponent } from './front/home/home.component';
 import { AboutComponent } from './front/about/about.component';
 import { ObjectiveComponent } from './front/objective/objective.component';
 import { ContactComponent } from './front/contact/contact.component';
+import { WhiteningSystemComponent } from './front/whitening-system/whitening-system.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './front/contact/contact.component';
     HomeComponent,
     AboutComponent,
     ObjectiveComponent,
-    ContactComponent
+    ContactComponent,
+    WhiteningSystemComponent
   ],
   imports: [
     BrowserModule,

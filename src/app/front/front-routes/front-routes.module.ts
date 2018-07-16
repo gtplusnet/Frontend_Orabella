@@ -7,15 +7,17 @@ import { HomeComponent } from '../home/home.component';
 import { AboutComponent } from '../about/about.component';
 import { ObjectiveComponent } from '../objective/objective.component';
 import { ContactComponent } from '../contact/contact.component';
+import { WhiteningSystemComponent } from '../whitening-system/whitening-system.component';
 
 import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
 const routes: Routes = [
-  { path: '', component: LayoutComponent, children: [
-  	{ path: '', component: HomeComponent },
-  	{ path: 'about', component: AboutComponent },
-  	{ path: 'objective', component: ObjectiveComponent },
-  	{ path: 'contact', component: ContactComponent }
+    { path: '', component: LayoutComponent, children: [
+    { path: '', component: HomeComponent },
+    { path: 'about', component: AboutComponent },
+    { path: 'objective', component: ObjectiveComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'whitening-system', component: WhiteningSystemComponent }
   ] }
 ];
 
