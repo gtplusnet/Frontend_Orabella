@@ -9,6 +9,7 @@ import { AboutComponent } from './front/about/about.component';
 import { ObjectiveComponent } from './front/objective/objective.component';
 import { ContactComponent } from './front/contact/contact.component';
 import { WhiteningSystemComponent } from './front/whitening-system/whitening-system.component';
+import { MineralMaskComponent } from './front/mineral-mask/mineral-mask.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { WhiteningSystemComponent } from './front/whitening-system/whitening-sys
     AboutComponent,
     ObjectiveComponent,
     ContactComponent,
-    WhiteningSystemComponent
+    WhiteningSystemComponent,
+    MineralMaskComponent
   ],
   imports: [
     BrowserModule,
