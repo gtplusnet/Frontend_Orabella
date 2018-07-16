@@ -10,6 +10,7 @@ import { ObjectiveComponent } from './front/objective/objective.component';
 import { ContactComponent } from './front/contact/contact.component';
 import { WhiteningSystemComponent } from './front/whitening-system/whitening-system.component';
 import { MineralMaskComponent } from './front/mineral-mask/mineral-mask.component';
+import { ColorStickSystemComponent } from './front/color-stick-system/color-stick-system.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MineralMaskComponent } from './front/mineral-mask/mineral-mask.componen
     ObjectiveComponent,
     ContactComponent,
     WhiteningSystemComponent,
-    MineralMaskComponent
+    MineralMaskComponent,
+    ColorStickSystemComponent
   ],
   imports: [
     BrowserModule,

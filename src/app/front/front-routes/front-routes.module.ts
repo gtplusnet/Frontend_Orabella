@@ -9,6 +9,7 @@ import { ObjectiveComponent } from '../objective/objective.component';
 import { ContactComponent } from '../contact/contact.component';
 import { WhiteningSystemComponent } from '../whitening-system/whitening-system.component';
 import { MineralMaskComponent } from '../mineral-mask/mineral-mask.component';
+import { ColorStickSystemComponent } from '../color-stick-system/color-stick-system.component';
 
 import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
@@ -19,7 +20,8 @@ const routes: Routes = [
     { path: 'objective', component: ObjectiveComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'whitening-system', component: WhiteningSystemComponent },
-    { path: 'mineral-mask', component: MineralMaskComponent }
+    { path: 'mineral-mask', component: MineralMaskComponent },
+    { path: 'color-stick-system', component: ColorStickSystemComponent }
   ] }
 ];
 
