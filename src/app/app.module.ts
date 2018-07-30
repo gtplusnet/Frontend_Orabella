@@ -12,6 +12,7 @@ import { WhiteningSystemComponent } from './front/whitening-system/whitening-sys
 import { MineralMaskComponent } from './front/mineral-mask/mineral-mask.component';
 import { ColorStickSystemComponent } from './front/color-stick-system/color-stick-system.component';
 import { EventsComponent } from './front/events/events.component';
+import { TutorialsComponent } from './front/tutorials/tutorials.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EventsComponent } from './front/events/events.component';
     WhiteningSystemComponent,
     MineralMaskComponent,
     ColorStickSystemComponent,
-    EventsComponent
+    EventsComponent,
+    TutorialsComponent
   ],
   imports: [
     BrowserModule,

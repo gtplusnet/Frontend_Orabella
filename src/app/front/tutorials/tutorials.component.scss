@@ -1,0 +1,48 @@
+@import "../../../styles";
+body {
+    font-size: $bfs;
+}
+
+.flex-responsive {
+    @media screen and (max-width: 500px) {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+.instruction
+{
+    font-family: serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: $violet;
+
+    @media screen and (max-width: 800px){
+        font-size: 20px;
+    }
+}
+
+.mx-150
+{
+    margin: 0 150px !important;
+
+    @media screen and (max-width: 800px){
+        margin: auto auto !important;
+    }
+}
+
+
+.s1 {
+    min-height: 65vh;
+    background-color: $bg-gray;
+    background-image: url('../../../assets/img/about-bg.png');
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media screen and (max-width: 991px) {
+        height: auto;
+        background-size: cover;
+    }
+}
