@@ -10,6 +10,7 @@ import { ContactComponent } from '../contact/contact.component';
 import { WhiteningSystemComponent } from '../whitening-system/whitening-system.component';
 import { MineralMaskComponent } from '../mineral-mask/mineral-mask.component';
 import { ColorStickSystemComponent } from '../color-stick-system/color-stick-system.component';
+import { EventsComponent } from '../events/events.component';
 
 import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
@@ -21,7 +22,8 @@ const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'whitening-system', component: WhiteningSystemComponent },
     { path: 'mineral-mask', component: MineralMaskComponent },
-    { path: 'color-stick-system', component: ColorStickSystemComponent }
+    { path: 'color-stick-system', component: ColorStickSystemComponent },
+    { path: 'events', component: EventsComponent }
   ] }
 ];
 

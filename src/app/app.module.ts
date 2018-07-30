@@ -11,6 +11,7 @@ import { ContactComponent } from './front/contact/contact.component';
 import { WhiteningSystemComponent } from './front/whitening-system/whitening-system.component';
 import { MineralMaskComponent } from './front/mineral-mask/mineral-mask.component';
 import { ColorStickSystemComponent } from './front/color-stick-system/color-stick-system.component';
+import { EventsComponent } from './front/events/events.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ColorStickSystemComponent } from './front/color-stick-system/color-stic
     ContactComponent,
     WhiteningSystemComponent,
     MineralMaskComponent,
-    ColorStickSystemComponent
+    ColorStickSystemComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
