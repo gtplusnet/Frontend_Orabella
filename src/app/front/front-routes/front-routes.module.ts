@@ -12,6 +12,7 @@ import { MineralMaskComponent } from '../mineral-mask/mineral-mask.component';
 import { ColorStickSystemComponent } from '../color-stick-system/color-stick-system.component';
 import { EventsComponent } from '../events/events.component';
 import { TutorialsComponent } from '../tutorials/tutorials.component';
+import { BellasCornerComponent } from '../bellas-corner/bellas-corner.component';
 
 import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
@@ -25,7 +26,8 @@ const routes: Routes = [
     { path: 'mineral-mask', component: MineralMaskComponent },
     { path: 'color-stick-system', component: ColorStickSystemComponent },
     { path: 'events', component: EventsComponent },
-    { path: 'tutorials', component: TutorialsComponent }
+    { path: 'tutorials', component: TutorialsComponent },
+    { path: 'bellas-corner', component: BellasCornerComponent },
   ] }
 ];
 

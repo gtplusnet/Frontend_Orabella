@@ -13,6 +13,7 @@ import { MineralMaskComponent } from './front/mineral-mask/mineral-mask.componen
 import { ColorStickSystemComponent } from './front/color-stick-system/color-stick-system.component';
 import { EventsComponent } from './front/events/events.component';
 import { TutorialsComponent } from './front/tutorials/tutorials.component';
+import { BellasCornerComponent } from './front/bellas-corner/bellas-corner.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TutorialsComponent } from './front/tutorials/tutorials.component';
     MineralMaskComponent,
     ColorStickSystemComponent,
     EventsComponent,
-    TutorialsComponent
+    TutorialsComponent,
+    BellasCornerComponent
   ],
   imports: [
     BrowserModule,
