@@ -13,6 +13,7 @@ import { ColorStickSystemComponent } from '../color-stick-system/color-stick-sys
 import { EventsComponent } from '../events/events.component';
 import { TutorialsComponent } from '../tutorials/tutorials.component';
 import { BellasCornerComponent } from '../bellas-corner/bellas-corner.component';
+import { BeautyCaravanComponent } from '../beauty-caravan/beauty-caravan.component';
 
 import { FrontRoutesRoutingModule } from './front-routes-routing.module';
 
@@ -28,6 +29,7 @@ const routes: Routes = [
     { path: 'events', component: EventsComponent },
     { path: 'tutorials', component: TutorialsComponent },
     { path: 'bellas-corner', component: BellasCornerComponent },
+    { path: 'beauty-caravan', component: BeautyCaravanComponent },
   ] }
 ];
 

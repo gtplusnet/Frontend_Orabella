@@ -1,0 +1,19 @@
+@import "../../../styles";
+body {
+    font-size: $bfs;
+}
+
+.s1 {
+    min-height: 65vh;
+    background-color: $bg-gray;
+    background-image: url('../../../assets/img/about-bg.png');
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    @media screen and (max-width: 991px) {
+        height: auto;
+        background-size: cover;
+    }
+}

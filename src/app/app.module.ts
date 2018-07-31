@@ -14,6 +14,7 @@ import { ColorStickSystemComponent } from './front/color-stick-system/color-stic
 import { EventsComponent } from './front/events/events.component';
 import { TutorialsComponent } from './front/tutorials/tutorials.component';
 import { BellasCornerComponent } from './front/bellas-corner/bellas-corner.component';
+import { BeautyCaravanComponent } from './front/beauty-caravan/beauty-caravan.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BellasCornerComponent } from './front/bellas-corner/bellas-corner.compo
     ColorStickSystemComponent,
     EventsComponent,
     TutorialsComponent,
-    BellasCornerComponent
+    BellasCornerComponent,
+    BeautyCaravanComponent
   ],
   imports: [
     BrowserModule,
